@@ -6,17 +6,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.wipro.dao.StudentDao;
+import com.wipro.service.StudentService;
 import com.wipro.model.Student;
 
 @RestController
 public class StudentController {
 	@Autowired
-	StudentDao studentDao;
+	StudentService studentService;
 	
 	@RequestMapping("/student")
 	public List<Student> getStudent(){
-		return studentDao.getStudent();
+		return studentService.getStudent();
 	}
 
 }
