@@ -1,0 +1,13 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>  
+    <session-factory>  
+        <property name="hbm2ddl.auto">update</property>  
+        <property name="dialect">org.hibernate.dialect.MySQL9Dialect</property>  
+        <property name="connection.url">jdbc:mysql://@localhost:3606:myschema</property>  
+        <property name="connection.username">root</property>  
+        <property name="connection.password">admin</property>  
+        <property name="connection.driver_class">mysql.jdbc.driver.MySqlDriver</property>  
+    <mapping resource="student.hbm.xml"/>  
+    </session-factory>  
+  
+</hibernate-configuration> -->
