@@ -1,0 +1,13 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>
+ <hibernate-mapping>  
+  <class name="com.wipro.model.Student" table="student">  
+    <id name="id">  
+     <generator class="assigned"></generator>  
+    </id>  
+            
+    <property name="name"></property>  
+    <property name="email"></property>  
+            
+  </class>  
+            
+ </hibernate-mapping>  -->
