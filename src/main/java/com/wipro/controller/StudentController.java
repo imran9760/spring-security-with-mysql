@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.wipro.service.StudentService;
 import com.wipro.model.Student;
 
+/*
+ * This is StudentController class.
+ */
 @RestController
 public class StudentController {
 	@Autowired
