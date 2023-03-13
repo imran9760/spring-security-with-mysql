@@ -1,13 +1,19 @@
-<!-- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <hibernate-configuration>  
     <session-factory>  
-        <property name="hbm2ddl.auto">update</property>  
-        <property name="dialect">org.hibernate.dialect.MySQL9Dialect</property>  
-        <property name="connection.url">jdbc:mysql://@localhost:3606:myschema</property>  
-        <property name="connection.username">root</property>  
-        <property name="connection.password">admin</property>  
-        <property name="connection.driver_class">mysql.jdbc.driver.MySqlDriver</property>  
-    <mapping resource="student.hbm.xml"/>  
+       <!-- Assume test is the database name-->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>   
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/myschema</property>  
+        <property name="hibernate.connection.username">root</property>  
+        <property name="hibernate.connection.password">admin</property>  
+        <!-- -->
+       
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="show_sql">true</property>  
+        <property name="hbm2ddl.auto">update</property> 
+        <!-- mapping-->
+        <!--<mapping class="com.wipro.entity.Student"/>-->
+    <mapping resource="student.hbm.xml"/>
     </session-factory>  
   
-</hibernate-configuration> -->
+</hibernate-configuration> 

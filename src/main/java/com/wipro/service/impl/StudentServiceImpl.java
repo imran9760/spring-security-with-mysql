@@ -9,11 +9,11 @@ import com.wipro.dao.StudentDao;
 import com.wipro.model.Student;
 import com.wipro.service.StudentService;
 
-@Service
+
 public class StudentServiceImpl implements StudentService{
 	
-	@Autowired
-	StudentDao studentDao;
+	//@Autowired
+	StudentDao studentDao = new StudentDao();
 	
 	@Override
 	public List<Student> getStudent(){
