@@ -1,14 +1,19 @@
 package com.wipro;
 
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import java.util.List;
+import com.wipro.model.Student;
+import com.wipro.service.*;
+import com.wipro.service.impl.StudentServiceImpl;
 
-@SpringBootApplication
 public class WiproTrainingApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(WiproTrainingApplication.class, args);
+	public static void main(String[] args) {	
+		StudentService studentService = new StudentServiceImpl();
+		List<Student> list = studentService.getStudent();
+		for(Student s: list) {
+			System.out.println("Student:[ "+s.getId() +" | "+s.getName()+" | "+s.getEmail()+" ]");
+		}
 	}
 
 }
