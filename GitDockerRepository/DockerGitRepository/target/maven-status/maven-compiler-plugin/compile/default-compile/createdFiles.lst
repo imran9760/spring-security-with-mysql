@@ -1,0 +1,6 @@
+com\wipro\docker\DockerApplication.class
+com\wipro\docker\model\DockerModel.class
+com\wipro\docker\repository\DockerDao.class
+com\wipro\docker\controller\DockerController.class
+com\wipro\docker\entity\DockerFile.class
+com\wipro\docker\repository\DockerRepository.class
