@@ -40,6 +40,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <finalName>com-wipro-docker-project</finalName>
+        <finalName>com-wipro-docker-jenkins</finalName>
     </build>
 </project>
